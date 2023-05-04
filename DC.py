@@ -1,3 +1,7 @@
+import torch
+import torch.nn as nn
+import numpy as np
+#0 kernel
 class DirectionalConv0(nn.Module):
     def __init__(self,in_channels,out_channels):
         super(DirectionalConv0,self).__init__()
@@ -19,7 +23,7 @@ class DirectionalConv0(nn.Module):
         x=self.relu(x)
         return x
     
-    
+#90 kernel
 class DirectionalConv90(nn.Module):
     def __init__(self,in_channels,out_channels):
         super(DirectionalConv90,self).__init__()
@@ -40,7 +44,7 @@ class DirectionalConv90(nn.Module):
         x=self.bn(x)
         x=self.relu(x)
         return x
-    
+#45 kernel  
 class DirectionalConv45(nn.Module):
     def __init__(self,in_channels,out_channels):
         
@@ -99,6 +103,7 @@ class DirectionalConv45(nn.Module):
         
         
         return x
+#-45 kernel
 class DirectionalConv_45(nn.Module):
     def __init__(self,in_channels,out_channels):
         
@@ -160,7 +165,7 @@ class DirectionalConv_45(nn.Module):
         return x
       
       
-
+$-45 kernel
 class DConv(nn.Module):
    
 
