@@ -8,6 +8,11 @@ This paper proposed two Novel Convolutions,i.e., Directional Convolution and Lar
 # How to use
 
 from DC import DConv
+
+
 dc_layer=DConv(in_channels,out_channels)
 
-from LFC import LargeField
+from LFC import LargeField_9
+
+
+lfc_layer=LargeField_9(in_channels,out_channels)
